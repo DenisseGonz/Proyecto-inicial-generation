@@ -1,111 +1,27 @@
 *{
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box;    
-}
-.encabezado{
-    position: fixed;
-    top: 0;right: 0;
-    margin: 0;
-    padding: 0;
-}
-/* Boton para abrir el menu */
-#btn1{
-    position:sticky;
-    top: 10px;
-    font-size: 50px;
-    float: right;
-    color: black;
-    cursor: pointer;
-    background-color: rgba(240, 103, 235, 0.41);
-    width: 130px;
-    height: 80px;
-    padding-top: 10px;
-    padding-left: 15px;
-    margin-top: 42px;
-}
-#btn-menu{
-    display: none;
-}
-#btn2{
-    position:fixed;
-    top: 0;
-    left: 40.5%;
-    float: left;
-    font-size: 50px;
-    color: black;
-    cursor: pointer;
-    background-color: rgba(240, 103, 235, 0.41);
-    width: 130px;
-    height: 80px;
-    padding-top: 10px;
-    padding-left: 15px;
-    margin-top: 42px;
-}
-#btn2:active ~ .encabezado{
-    opacity: 0.5;
-}
-/*Menu lateral*/
-
-.contenedorPrin{
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.2);
-    width: 100%;
-    height: 100vh;
-    margin-top: 0;
-    margin-right: 0;
-    transition: all 500 ms ease;
-    opacity: 0;
-    visibility: hidden;
-}
-#btn-menu:checked ~.contenedorPrin{
-    opacity: 1;
-    visibility: visible;
-}
-
-.contLista{
-    width: 100%;
-    max-width: 50%;
-    background: linear-gradient(90deg, rgba(142, 59, 119, 0.79) 26.56%,
-     rgba(0, 0, 0, 0.78) 91.15%);
-    height: 100vh;
-    margin-left: 50%;
-    position:relative;
-    transition: all 500 ms ease;
-    transform: translateX(-100%);
-}
-#btn-menu:checked ~ .contenedorPrin .contLista{
-    transform: translateX(0%);
-}
-
-.contLista, nav{
-    transform: translateY(25%);
-}
-.contLista, nav, #menu{
-    display: block;
-    text-decoration: none;
-    padding: 20px;
-    color: white;
-    border-left: 15px solid transparent;
-    transition: all 500 ms ease;
-    font-size: 46px;
-}
-.contLista, nav, #menu:hover{
-    border-left: solid transparent;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;    
 }
 /* Para yo*/
 .nombre_puesto{
     text-align-last: center;
-    font-family:'Times New Roman', Times, serif;
     color: blanchedalmond;
     position: static;
 }
 h2{
     font-style: italic;
+    font-family: 'Oswald', sans-serif;
 }
 h3{
     text-align: center;
-    font-size: 45px;
+    font-size: 42px;
+    width: 100%;
+    padding: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: 'Oswald', sans-serif;
 }
 .yo{
     /*En el mockup esta como index*/
@@ -113,17 +29,19 @@ h3{
     width: 100%;
     height: 100vh;
     background: linear-gradient(180deg, #010934 45.83%, #00C2FF 100%);
-    z-index: 0;
+    margin: 0;
 }
-div{
-    padding-bottom: 100px;
+hr{
+    color: #000000;
+    padding-bottom: 4%;
+    visibility: hidden;
 }
 article{
     background-color: white;
-    margin-left: 8.55%;
-    margin-bottom: 8%;
-    height: 86%;
-    width: 83%;
+    margin-left: 5%;
+    height: 84vh;
+    width: 89%;
+    padding-top: 3%;
 }
 .sobre_mi{
     /* Personal */
@@ -131,35 +49,60 @@ article{
     width: 100%;
     height: 100vh;
     background: linear-gradient(180deg, #00C2FF 0%, #4561C6 85.42%);
+    margin: 0;
+}
+.contenedor{
+    display: flex;
+    flex-flow:wrap row;
+    justify-content: space-around;
+    align-content:space-around;
+    padding-bottom: 10%;
     padding-top: 10%;
 }
+h4{
+    font-size: 30px;
+}
+.p_sobre{
+    font-size: 16px;
+    text-align: justify;
+}
 .intro{
-    float: left;
-    width: 65%;
-    overflow:auto;
-    background-color: blueviolet;
+    text-align: center;
+    width: 60%;
+    margin-left: 3%;
+    padding: 3%;
+    padding-top: 0;
 }
 .forma{
-    float: right;
-    width: 35%;
-    border-left-color: black;
-    background-color: blueviolet;
+    display: block;
+    border-left: black 3px solid;
+    text-align: center;
+    width: 33%;
+    margin-right: 3%;
+    padding: 3%;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .inte{
     text-align: center;
-    clear: both;
-    background-color: blueviolet;
+    padding: 3%;
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-top: 0;
 }
-.intro, .forma, .inte{
-    display: flex;
-}
+/* Habilidades */
 .habilidades{
-    /* Habilidades */
     position: static;
     width: 100%;
     height: 100vh;
     background: linear-gradient(180deg, #4561C6 33.85%, #321CB7 100%);
-    padding-top: 10%;
+}
+ul{
+    margin-top: 2%;
+    margin-bottom: 1%;
+    font-size: 24px;
+    list-style-type: none;
 }
 .portafolio{
     /* Portafolio */
@@ -167,31 +110,76 @@ article{
     width: 100%;
     height: 100vh;
     background: linear-gradient(180deg, #321CB7 50.2%, #321CB7 50.21%, #4B0A7D 100%);
-    padding-top: 10%;
 }
+#proyectos{
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+}
+.cont_lista{
+    width: 60%;
+    font-size: 36px;
+}
+.interior_lista{
+    margin-left: 10%;
+}
+.lista_des{
+    cursor: pointer;
+}
+#lista_HA, #lista_OP{
+    display: none;
+}
+.interior_lista{
+    display: none;
+}
+#lista_HA:checked~.interior_lista{
+    display: block;
+}
+#lista_OP:checked~.interior_lista{
+    display: block;
+}
+
+/* Contacto */
 .contacto{
-    /* Contacto */
     position: static;
     width: 100%;
     height: 100vh;
     background: linear-gradient(180deg, #480D80 0%, #000000 100%);
-    padding-top: 10%;
 }
 .contenedor-form{
     display: block;
     border: black;
-    background-color: #4B0A7D;
+    background: linear-gradient(180deg, #480D80 0%, rgba(72, 13, 128, 0.56) 100%);
     color: white;
     padding-bottom: 5%;
     margin-left: 15%;
     margin-right: 15%;
+    font-size: 24px;
+    text-align: left;
 }
 .titulo_form{
     color: white;
+    padding-top: 3%;
+}
+input, textarea{
+    outline:none;
+}
+.textoform{
+    width: 90%;
+    margin-left: 5%;
+    height: 30px;
+}
+.mensaje{
+    height: 100px;
 }
 #enviar{
+    padding:0 3% 0 3%;
     float: right;
-    margin-left: 15px;
+    margin-right: 5%;
+    background-color: rgb(54, 0, 54);
+    color: white;
+    font-size: 18px;
+    border: none;
 }
 .enlace_github{
     text-decoration: none;
@@ -200,5 +188,5 @@ article{
 h6{
     color: white;
     text-align: center;
-    margin-top: 50px;
+    padding: 3%;
 }

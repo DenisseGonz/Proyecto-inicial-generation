@@ -5,7 +5,11 @@
         <meta name="author" content="DenisseGonz"/>
         <meta name="description" content="A personal portfolio for the Bootcamp Java Fullstack"/>
         <title>CV Digital</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Titillium+Web&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="CSS/estilos.css" />
+        <link rel="stylesheet" href="CSS/menucss.css" />
         <link rel="stylesheet" href="CSS/fontello/css/cv-icons.css"/>
         <script src="JS/principal.js" defer></script>
     </head>
@@ -25,8 +29,7 @@
             </div>
             <label for="btn-menu" class="icon-menu" id="btn2"></label>
         </div>
-        
-
+        <!-- Contenido principal-->
         <main class="yo">
             <div class="carrusel">
                 Este va a ser el carrusel
@@ -36,63 +39,87 @@
                 <h2>Java Fullstack Developer</h2>
             </div>
         </main>
-        <hr>
         <div class="sobre_mi">
-            <article>
-                <h3>Sobre mi</h3>
+            <hr/>
+            <article class="contenedor">
+                <h3><label class="icon-user-circle-o"></label> Sobre mi</h3>
                 <section class="intro">
-                    <h4>Introducción</h4>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum repellat, fugiat soluta ipsa iusto expedita illo est quos harum esse maxime suscipit tempora voluptatum! Ex eos eaque illum officiis porro?
+                    <h4><label class="icon-fire-1"></label> Introducción</h4><br/>
+                    <p class="p_sobre">
+                        Soy Denisse y nací en la capital de México donde he vivido a lo largo de 21 años. Soy capaz de comunicarme eficazmente, ser organizada, estructurada y ser líder. Sé investigar, redactar y aplicar los conocimientos que adquiero. A inicios de 2021 fuí <strong>Analista administrativo</strong> en <strong>Recicladora Ecoazteca S.A. de C.V.</strong> En mi trabajo me encargaba de hacer la relación entre el área de recepción de obsoletos y el área de logística. Mientras que en mi formación académica me involucraba en proyectos para la generación de reportes y documentación.
                     </p>
                 </section>
                 <section class="forma">
-                    <label>Formación</label><br/>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum repellat, fugiat soluta ipsa iusto expedita illo est quos harum esse maxime suscipit tempora voluptatum! Ex eos eaque illum officiis porro?
+                    <h4><label class="icon-graduation-cap"></label> Formación</h4><br/>
+                    <p class="p_sobre">
+                        <strong>2015-2018:</strong> Instituto Politécnico Nacional. CECyT 9 "Juan de Dios Bátiz". En la carrera de Programación (Concluido).<br/>
+                        <strong>2019-2021:</strong> Instituto Politécnico Nacional. ESFM. En la carrera de Licenciatura en Física y Matemáticas (Inconcluso).<br/>
+                        <strong>2021:</strong> Generation México - Bootcamp Desarrolladorx Java Full Stack (En proceso)<br/>
                     </p>
                 </section>
                 <section class="inte">
-                    <label>Intereses</label><br/>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum repellat, fugiat soluta ipsa iusto expedita illo est quos harum esse maxime suscipit tempora voluptatum! Ex eos eaque illum officiis porro?
+                    <h4><label class="icon-heart"></label> Intereses</h4><br/>
+                    <p class="p_sobre">
+                        Me interesa la ciencia y la tecnología, especialmente la rama de la Física y las Matemáticas, así como poder desarrollarme en las mismas. Tengo planeado tomar la carrera de Ciencia de Datos para Negocios en línea mientras genero experiencia en la industria.
                     </p>
                 </section>
             </article>
         </div>
-        <hr>
         <div class="habilidades">
-            <article>
-                <h3>Stack</h3>
-                inserte lista
+            <hr>
+            <article class="contenedor">
+                <h3><label class="icon-desktop"></label> Stack</h3>
+                <ul>
+                    <li class="icon-right-open"> HTML5</li>
+                    <li class="icon-right-open"> CSS3</li>
+                    <li class="icon-right-open"> Javascript</li>
+                    <li class="icon-right-open"> Java</li>
+                    <li class="icon-right-open"> MySQL</li>
+                    <li class="icon-right-open"> LaTeX</li>
+                    <li class="icon-right-open"> Figma</li>
+                    <li class="icon-right-open"> Bootstrap</li>
+                    <li class="icon-right-open"> Git Bash</li>
+                    <li class="icon-right-open"> Trello</li>
+                </ul>
             </article>
         </div>
-        <hr>
         <div class="portafolio">
-            <article>
-                <h3>Proyectos</h3>
-                Inserte Heart Attack <br/>
-                Otros proyectos <br/>
-                Link a Github
+            <hr>
+            <article class="contenedor">
+                <h3 id="proyectos"><label class="icon-folder-open-empty"></label> Proyectos</h3>
+                <ul class="cont_lista">
+                    <li><input type="checkbox" id="lista_HA"><label class="icon-heart lista_des" for="lista_HA"> Heart Attack </label><br/>
+                        <ul class="interior_lista">
+                            <li class="icon-file-pdf"><a href="cargadorpdf.html">Ver información</a></li>
+                            <li class="icon-download-1"><a download="Heart_Attack_Document" href="Heart_Attack_Document.pdf">Descargar información</a></li>
+                        </ul>
+                    </li>
+                    <li><input type="checkbox" id="lista_OP"><label class="icon-briefcase lista_des" for="lista_OP"> Otros proyectos</label><br/>
+                        <ul class="interior_lista">
+                            <li class="icon-sun"> Tarea del Bootcamp: <a href="https://denissegonz.github.io/Ejercicio-Rod/">Página Rod</a></li>
+                        </ul>
+                    </li>
+                    <li class="icon-github-circled"> Link a <a href="https://github.com/DenisseGonz">Github</a></li>
+                </ul>
             </article>
         </div>
-        <hr>
         <div class="contacto">
+            <hr>
             <article>
                 <center><section class="contenedor-form">
                     <form>
-                        <h3 class="titulo_form">Contacto</h3> <br/>
-                        <label>Nombre</label><br/>
-                        <input type="text"><br/>
-                        <label>Correo</label><br/>
-                        <input type="text"><br/>
-                        <label>Mensaje</label><br/>
-                        <textarea></textarea><br/>
+                        <h3 class="titulo_form icon-user-1">Contacto</h3>
+                        <label class="textoform">Nombre</label><br/>
+                        <input type="text" class="textoform"><br/>
+                        <label class="textoform">Correo</label><br/>
+                        <input type="text" class="textoform"><br/>
+                        <label class="textoform">Mensaje</label><br/>
+                        <textarea class="textoform mensaje"></textarea><br/>
                         <button id="enviar">Enviar</button>
                     </form>
                 </section></center>
             </article>
-            <footer>
+            <footer style="background-color: black;">
                 <h6>Designed by <a class="enlace_github" href="https://github.com/DenisseGonz">DenisseGonz</a></h6>
             </footer>
         </div>
