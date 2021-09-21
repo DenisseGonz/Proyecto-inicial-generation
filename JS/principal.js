@@ -1,3 +1,3 @@
-function ocultar(){
-    document.getElementById("icon-menu");
-}
+$(function () {
+    $('[data-toggle="popover"]').popover()
+})

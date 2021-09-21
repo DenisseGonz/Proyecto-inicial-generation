@@ -2,126 +2,176 @@
 <html lang="es">
     <head>
         <meta charset="UFT-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="author" content="DenisseGonz"/>
         <meta name="description" content="A personal portfolio for the Bootcamp Java Fullstack"/>
         <title>CV Digital</title>
+        <!-- Bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <!-- Fuentes de Google -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Titillium+Web&display=swap" rel="stylesheet">
+        <!-- Mis estilos -->
         <link rel="stylesheet" href="CSS/estilos.css" />
         <link rel="stylesheet" href="CSS/menucss.css" />
+        <!-- Iconos -->
         <link rel="stylesheet" href="CSS/fontello/css/cv-icons.css"/>
+        <!-- Aún no te uso para nada -->
         <script src="JS/principal.js" defer></script>
     </head>
     <body>
-        <div class="encabezado">
-                <label id="btn1" for="btn-menu" class="icon-menu"></label>
+
+    <!-- Primero es el header o menú de navegación (Elemento con puro CSS)-->
+       
+    <div class="encabezado">
+        <label id="btn1" for="btn-menu" class="icon-menu"></label>
         </div>
         <input type="checkbox" id="btn-menu"/>
         <div class="contenedorPrin">
             <div class="contLista">
                 <nav id="lateral" class="menu">
-                    <a href="#"><i class="icon-beaker" id="menu">Presentación</i></a>
-                    <a href="#"><i class="icon-beaker" id="menu">Habilidades</i></a>
-                    <a href="#"><i class="icon-beaker" id="menu">Proyectos</i></a>
-                    <a href="#"><i class="icon-beaker" id="menu">Contacto</i></a>
+                    <p style="text-align:center;">¿A dónde te gustaría ir?</p>
+                    <a href="#principal"><i class="icon-beaker" id="menu">Inicio</i></a>
+                    <a href="#sobre-mi"><i class="icon-beaker" id="menu">Presentación</i></a>
+                    <a href="#skills"><i class="icon-beaker" id="menu">Habilidades</i></a>
+                    <a href="#projects"><i class="icon-beaker" id="menu">Proyectos</i></a>
+                    <a href="#contacto"><i class="icon-beaker" id="menu">Contacto</i></a>
                 </nav>
             </div>
-            <label for="btn-menu" class="icon-menu" id="btn2"></label>
-        </div>
-        <!-- Contenido principal-->
-        <main class="yo">
-            <div class="carrusel">
-                Este va a ser el carrusel
+        <label for="btn-menu" class="icon-menu" id="btn2"></label>
+    </div>
+
+    <!-- Contenido principal -->
+
+    <main class="container-fluid" id="principal">
+        <div class="d-flex row justify-content-center align-items-center yo">
+            <div class="container-fluid d-flex align-self-start carrusel">
+                Este es un carrusel
             </div>
-            <div class="nombre_puesto">
-                <h1>Denisse González Resendiz</h1>
-                <h2>Java Fullstack Developer</h2>
+            <div class="foto d-flex justify-content-center container-fluid">
+                <img src="foto.jpg" class="rounded-circle mi-foto" alt="Holi"/>
             </div>
-        </main>
-        <div class="sobre_mi">
-            <hr/>
-            <article class="contenedor">
-                <h3><label class="icon-user-circle-o"></label> Sobre mi</h3>
-                <section class="intro">
-                    <h4><label class="icon-fire-1"></label> Introducción</h4><br/>
-                    <p class="p_sobre">
-                        Soy Denisse y nací en la capital de México donde he vivido a lo largo de 21 años. Soy capaz de comunicarme eficazmente, ser organizada, estructurada y ser líder. Sé investigar, redactar y aplicar los conocimientos que adquiero. A inicios de 2021 fuí <strong>Analista administrativo</strong> en <strong>Recicladora Ecoazteca S.A. de C.V.</strong> En mi trabajo me encargaba de hacer la relación entre el área de recepción de obsoletos y el área de logística. Mientras que en mi formación académica me involucraba en proyectos para la generación de reportes y documentación.
-                    </p>
-                </section>
-                <section class="forma">
-                    <h4><label class="icon-graduation-cap"></label> Formación</h4><br/>
-                    <p class="p_sobre">
-                        <strong>2015-2018:</strong> Instituto Politécnico Nacional. CECyT 9 "Juan de Dios Bátiz". En la carrera de Programación (Concluido).<br/>
-                        <strong>2019-2021:</strong> Instituto Politécnico Nacional. ESFM. En la carrera de Licenciatura en Física y Matemáticas (Inconcluso).<br/>
-                        <strong>2021:</strong> Generation México - Bootcamp Desarrolladorx Java Full Stack (En proceso)<br/>
-                    </p>
-                </section>
-                <section class="inte">
-                    <h4><label class="icon-heart"></label> Intereses</h4><br/>
-                    <p class="p_sobre">
-                        Me interesa la ciencia y la tecnología, especialmente la rama de la Física y las Matemáticas, así como poder desarrollarme en las mismas. Tengo planeado tomar la carrera de Ciencia de Datos para Negocios en línea mientras genero experiencia en la industria.
-                    </p>
-                </section>
-            </article>
+            <div>
+                <h1 class="nombre">Denisse González Resendiz</h1>
+            </div><div class="w-100"></div>
+            <div>
+                <h2 class="puesto">Java Fullstack Developer</h2>
+            </div><div class="w-100"></div>
+            <div class="align-self-end d-flex entrada align-items-center justify-content-center">
+                <div class="column">
+                    <a class="ver-mas" href="#sobre-mi">Ver más<br/>
+                    <label class=" icon-down-circled ver-mas"></label></a>
+                </div>
+            </div>
         </div>
-        <div class="habilidades">
-            <hr>
-            <article class="contenedor">
-                <h3><label class="icon-desktop"></label> Stack</h3>
-                <ul>
-                    <li class="icon-right-open"> HTML5</li>
-                    <li class="icon-right-open"> CSS3</li>
-                    <li class="icon-right-open"> Javascript</li>
-                    <li class="icon-right-open"> Java</li>
-                    <li class="icon-right-open"> MySQL</li>
-                    <li class="icon-right-open"> LaTeX</li>
-                    <li class="icon-right-open"> Figma</li>
-                    <li class="icon-right-open"> Bootstrap</li>
-                    <li class="icon-right-open"> Git Bash</li>
-                    <li class="icon-right-open"> Trello</li>
-                </ul>
-            </article>
-        </div>
-        <div class="portafolio">
-            <hr>
-            <article class="contenedor">
-                <h3 id="proyectos"><label class="icon-folder-open-empty"></label> Proyectos</h3>
-                <ul class="cont_lista">
-                    <li><input type="checkbox" id="lista_HA"><label class="icon-heart lista_des" for="lista_HA"> Heart Attack </label><br/>
-                        <ul class="interior_lista">
-                            <li class="icon-file-pdf"><a href="cargadorpdf.html">Ver información</a></li>
-                            <li class="icon-download-1"><a download="Heart_Attack_Document" href="Heart_Attack_Document.pdf">Descargar información</a></li>
-                        </ul>
-                    </li>
-                    <li><input type="checkbox" id="lista_OP"><label class="icon-briefcase lista_des" for="lista_OP"> Otros proyectos</label><br/>
-                        <ul class="interior_lista">
-                            <li class="icon-sun"> Tarea del Bootcamp: <a href="https://denissegonz.github.io/Ejercicio-Rod/">Página Rod</a></li>
-                        </ul>
-                    </li>
-                    <li class="icon-github-circled"> Link a <a href="https://github.com/DenisseGonz">Github</a></li>
-                </ul>
-            </article>
-        </div>
-        <div class="contacto">
-            <hr>
-            <article>
-                <center><section class="contenedor-form">
-                    <form>
-                        <h3 class="titulo_form icon-user-1">Contacto</h3>
-                        <label class="textoform">Nombre</label><br/>
-                        <input type="text" class="textoform"><br/>
-                        <label class="textoform">Correo</label><br/>
-                        <input type="text" class="textoform"><br/>
-                        <label class="textoform">Mensaje</label><br/>
-                        <textarea class="textoform mensaje"></textarea><br/>
-                        <button id="enviar">Enviar</button>
-                    </form>
-                </section></center>
-            </article>
-            <footer style="background-color: black;">
-                <h6>Designed by <a class="enlace_github" href="https://github.com/DenisseGonz">DenisseGonz</a></h6>
-            </footer>
-        </div>
+    </main>
+
+    <!-- Sección Sobre Mi -->
+
+    <div class="sobre_mi container-fluid d-flex justify-content-center" id="sobre-mi">
+        <article class="contenedor row justify-content-center">
+            <h3 class="titulo"><label class="icon-user-circle-o"></label> Sobre mi</h3>
+            <section class="intro d-flex justify-content-center row">
+                <h4 class="info-sobre-mi"><label class="icon-fire-1"></label> Introducción</h4><div class="w-100"></div>
+                <p class="p_sobre">
+                    Soy Denisse y nací en la capital de México donde he vivido a lo largo de 21 años. Soy capaz de comunicarme eficazmente, ser organizada, estructurada y ser líder. Sé investigar, redactar y aplicar los conocimientos que adquiero. A inicios de 2021 fuí <strong>Analista administrativo</strong> en <strong>Recicladora Ecoazteca S.A. de C.V.</strong> En mi trabajo me encargaba de hacer la relación entre el área de recepción de obsoletos y el área de logística. Mientras que en mi formación académica me involucraba en proyectos para la generación de reportes y documentación.
+                </p>
+            </section>
+            <section class="forma d-flex justify-content-center row">
+                <h4 class="info-sobre-mi"><label class="icon-graduation-cap"></label> Formación</h4><div class="w-100"></div>
+                <p class="p_sobre">
+                    <strong>2015-2018:</strong> Instituto Politécnico Nacional. CECyT 9 "Juan de Dios Bátiz". En la carrera de Programación (Concluido).<br/>
+                    <strong>2019-2021:</strong> Instituto Politécnico Nacional. ESFM. En la carrera de Licenciatura en Física y Matemáticas (Inconcluso).<br/>
+                    <strong>2021:</strong> Generation México - Bootcamp Desarrolladorx Java Full Stack (En proceso)<br/>
+                </p>
+            </section>
+            <section class="inte d-flex justify-content-center row">
+                <h4 class="info-sobre-mi"><label class="icon-heart"></label> Intereses</h4><div class="w-100"></div>
+                <p class="p_sobre">
+                    Me interesa la ciencia y la tecnología, especialmente la rama de la Física y las Matemáticas, así como poder desarrollarme en las mismas. Tengo planeado tomar la carrera de Ciencia de Datos para Negocios en línea mientras genero experiencia en la industria.
+                </p>
+            </section>
+        </article>
+    </div>
+
+    <!-- Sección Habilidades -->
+
+    <div class="habilidades container-fluid d-flex justify-content-center" id="skills">
+        <article class="contenedor row d-flex justify-content-center">
+            <h3 class="titulo px-5"><label class="icon-desktop"></label> Stack</h3>
+            <div class="w-100"></div>
+            <p class="ins-poppover">
+                Para obtener información de cada uno, presiona el botón. Para desactivar la ventana emergente, vuelve a presionar el botón
+            </p>
+            <ul class="row justify-content-around">
+                <div class="col-12 col-md-5">
+                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="HTML, siglas en inglés de HyperText Markup Language (‘lenguaje de marcado de hipertexto’), hace referencia al lenguaje de marcado para la elaboración de páginas web.">HTML5</a></li>
+                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="CSS (siglas en inglés de Cascading Style Sheets), en español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.">CSS3</a></li>
+                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus"data-placement="right" data-content="JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico.">Javascript</a></li>
+                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="Java es un lenguaje de programación y una plataforma informática que fue comercializada por primera vez en 1995 por Sun Microsystems. Java ies usada para desarrollar aplicaciones moviles, aplicaciones web, aplicaciones de escritorio, juegos y mucho más.">Java</a></li>
+                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="MySQL es un sistema de gestión de bases de datos relacional desarrollado Oracle Corporation y está considerada como la base de datos de código abierto más popular del mundo.">MySQL</a></li>
+                </div>
+                <div class="col-12 col-md-5">
+                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="LaTeX es un sistema de composición de textos, orientado a la creación de documentos escritos que presenten una alta calidad tipográfica. Por sus características y posibilidades, es usado de forma especialmente intensa en la generación de artículos y libros científicos.">LaTeX</a></li>
+                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="Figma es un editor de gráficos vectorial y una herramienta de generación de prototipos, principalmente basada en la web, con características off-line adicionales habilitadas por aplicaciones de escritorio en macOS y Windows">Figma</a></li>
+                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="Bootstrap es un framework o una biblioteca multiplataforma o conjunto de herramientas de código abierto para diseño de sitios y aplicaciones web.">Bootstrap</a></li>
+                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="Git es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia, la confiabilidad y compatibilidad del mantenimiento de versiones de aplicaciones cuando estas tienen un gran número de archivos de código fuente.">Git</a></li>
+                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="Trello es un software de administración de proyectos con interfaz web y con cliente para iOS y android para organizar proyectos.">Trello</a></li>
+                </div>
+            </ul>
+        </article>
+    </div>
+
+    <!-- Sección de proyectos -->
+
+    <div class="portafolio container-fluid d-flex justify-content-center" id="projects">
+        <article class="contenedor">
+            <h3 class="titulo d-flex justify-content-center align-content-start"><label class="icon-folder-open-empty"></label> Proyectos</h3>
+            <ul class="cont_lista row dropdown d-flex justify-content-start align-content-around">
+                <li><label class="icon-heart dropdown-toggle item-HA" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Heart Attack </label><br/>
+                    <ul class="interior_lista dropdown-menu">
+                        <li class="icon-file-pdf dropdown-item"><a href="cargadorpdf.html">Ver información</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li class="icon-download-1 dropdown-item"><a download="Heart_Attack_Document.pdf" href="Heart_Attack_Document.pdf">Descargar información</a></li>
+                    </ul>
+                </li><div class="w-100"></div>
+                <li><label class="icon-briefcase lista_des dropdown-toggle item-OP" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Otros proyectos</label><br/>
+                    <ul class="interior_lista dropdown-menu">
+                        <li class="icon-sun dropdown-item"> Tarea del Bootcamp: <a href="https://denissegonz.github.io/Ejercicio-Rod/">Página Rod</a></li>
+                    </ul>
+                </li><div class="w-100"></div>
+                <li class="icon-github-circled item-git"> Link a <a href="https://github.com/DenisseGonz">Github</a></li>
+            </ul>
+        </article>
+    </div>
+
+    <!-- Sección de Contacto -->
+
+    <div class="container-fluid d-flex justify-content-center contacto row" id="contacto">
+        <article class="contenedor">    
+            <section class="contenedor-form d-flex">
+                <form class="d-flex justify-content-center row form-group">
+                    <h3 class="titulo_form icon-user-1">Contacto</h3>
+                    <label class="textoform">Nombre</label><br/>
+                    <input type="text" class="textoform form-control"><br/>
+                    <label class="textoform">Correo</label><br/>
+                    <input type="text" class="textoform form-control">
+                    <label class="textoform">Mensaje</label><br/>
+                    <textarea class="textoform  form-control mensaje"></textarea>
+                    <div class="w-100"></div>
+                    <button id="enviar">Enviar</button>
+                </form>
+            </section>
+        </article><div class="w-100"></div>
+        <footer class="container-fluid d-flex align-self-end justify-content-center">
+            <h6>Designed by <a class="enlace_github" href="https://github.com/DenisseGonz">DenisseGonz</a></h6>
+        </footer>
+    </div>
+
+    <!-- Resto del Bootstrap con JQuery y Popper-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     </body>
 </html>
