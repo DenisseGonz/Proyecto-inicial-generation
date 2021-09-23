@@ -4,25 +4,140 @@
     *{
         font-size: 18px;
     }
+    .title-menu{
+        font-size: 1.1em;
+    }
+    .btn-pop{
+        font-size: 0.4em;
+    }
+    .btn-pop{
+        width: 120px;
+        font-size: 1em;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-    *{
-        font-size: 22px;
+    .title-menu{
+        font-size: 1.2em;
+    }
+    .dropdown-item{
+        padding: 0.25rem 1.25rem;
+    }.btn-pop{
+        width: 120px;
+        font-size: 1em;
+    }
+    .prin{
+        font-size: 1.25rem;
     }
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-    *{
-        font-size: 28px;
+    .icon-menu{
+        font-size: 210px;
+    }
+    #menu{
+        font-size: 1.5em;
+        padding-left: 15%;
+    }
+    .btn-pop{
+        width: 120px;
+        font-size: 1em;
+    }
+    .title-menu{
+        font-size: 1.25em;
+    }
+    .forma{
+        margin-right: 15px;
+        border-left: 1px solid black;
+    }
+    .prin{
+        font-size: 1.25rem;
+    }
+    .dropdown-item{
+        padding: 0.25rem 1.25rem;
+    }
+    p{
+        font-size: 1.125rem;
     }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-    *{
-        font-size: 36px;
+    p{
+        font-size: 1.25rem;
+    }
+    /*Menú*/
+    #btn-menu{
+        padding-top: 3em;
+        padding-left: 15em;
+        margin-top: 42em;
+    }
+    #menu{
+        font-size: 2em;
+        padding-left: 25%;
+    }
+    .title-menu{
+        font-size: 1.25em;
+    }
+    /*Inicio*/
+    .mi-foto{
+        height: 35vh;
+        width: 35vh;
+        margin-top: 10%;
+    }
+    .nombre{
+        font-size: 2.25em;
+        margin-top: -3px;
+    }
+    .puesto{
+        font-size: 1.5em;
+    }
+    .entrada{
+        margin-top:5%
+    }
+    .ver-mas{
+        font-size: 1.2rem;
+    }
+    /*sobre mi*/
+    .titulo{
+        font-size: 2em;
+        margin-top: 15px;
+    }
+    .icon-user-circle-o{
+        font-size: 1em;
+    }
+    .info-sobre-mi{
+        font-size: 1.75em;
+    }
+    .p_sobre{
+        font-size: 1em;
+    }
+    .forma{
+        margin-right: 15px;
+        border-left: 1px solid black;
+    }
+    /*Stack*/    
+    .btn-pop{
+        width: 120px;
+        font-size: 1em;
+    }
+    .botones-poppovers{
+        justify-content: space-around;
+    }
+    /*Proyectos*/
+    .dropdown-item{
+        padding: 0.25rem 1.25rem;
+    }
+    .prin{
+        font-size: 1.5rem;
+    }
+    /*Contacto*/
+    label{
+        font-size: 5em;
+    }
+    .mensaje{
+        height: 30px;
     }
 }

@@ -114,6 +114,9 @@ li{
     margin-left: 10%;
     height: 80%;
 }
+.dropdown-item{
+    padding: 0.25rem 0.25rem;
+}
 .item-HA{
     display: block;
     width: fit-content;
@@ -178,14 +181,12 @@ input, textarea{
     padding:0;
     font-size: 1rem;
 }
-#enviar{
-    margin-left: 65%;
+.enviar{
     margin-top: 3%;
     padding:0 3% 0 3%;
-    background-color: rgb(54, 0, 54);
-    color: white;
+    border-color: rgb(54, 0, 54);
+    color: rgb(54, 0, 54);
     font-size: 18px;
-    border: none;
 }
 /* Footer */
 .enlace_github{

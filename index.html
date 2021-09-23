@@ -15,6 +15,7 @@
         <!-- Mis estilos -->
         <link rel="stylesheet" href="CSS/estilos.css" />
         <link rel="stylesheet" href="CSS/menucss.css" />
+        <link rel="stylesheet" href="CSS/responsive.css" />
         <!-- Iconos -->
         <link rel="stylesheet" href="CSS/fontello/css/cv-icons.css"/>
         <!-- Aún no te uso para nada -->
@@ -31,7 +32,7 @@
         <div class="contenedorPrin">
             <div class="contLista">
                 <nav id="lateral" class="menu">
-                    <p style="text-align:center;">¿A dónde te gustaría ir?</p>
+                    <p class="title-menu" style="text-align:center;">¿A dónde te gustaría ir?</p>
                     <a href="#principal"><i class="icon-beaker" id="menu">Inicio</i></a>
                     <a href="#sobre-mi"><i class="icon-beaker" id="menu">Presentación</i></a>
                     <a href="#skills"><i class="icon-beaker" id="menu">Habilidades</i></a>
@@ -70,15 +71,15 @@
     <!-- Sección Sobre Mi -->
 
     <div class="sobre_mi container-fluid d-flex justify-content-center" id="sobre-mi">
-        <article class="contenedor row justify-content-center">
-            <h3 class="titulo"><label class="icon-user-circle-o"></label> Sobre mi</h3>
-            <section class="intro d-flex justify-content-center row">
+        <article class="contenedor row justify-content-between">
+            <h3 class="titulo col-12 text-center"><label class="icon-user-circle-o"></label> Sobre mi</h3>
+            <section class="col-12 col-lg-7 intro d-flex justify-content-center row">
                 <h4 class="info-sobre-mi"><label class="icon-fire-1"></label> Introducción</h4><div class="w-100"></div>
                 <p class="p_sobre">
                     Soy Denisse y nací en la capital de México donde he vivido a lo largo de 21 años. Soy capaz de comunicarme eficazmente, ser organizada, estructurada y ser líder. Sé investigar, redactar y aplicar los conocimientos que adquiero. A inicios de 2021 fuí <strong>Analista administrativo</strong> en <strong>Recicladora Ecoazteca S.A. de C.V.</strong> En mi trabajo me encargaba de hacer la relación entre el área de recepción de obsoletos y el área de logística. Mientras que en mi formación académica me involucraba en proyectos para la generación de reportes y documentación.
                 </p>
             </section>
-            <section class="forma d-flex justify-content-center row">
+            <section class="col-12 col-lg-4 forma d-flex justify-content-center row">
                 <h4 class="info-sobre-mi"><label class="icon-graduation-cap"></label> Formación</h4><div class="w-100"></div>
                 <p class="p_sobre">
                     <strong>2015-2018:</strong> Instituto Politécnico Nacional. CECyT 9 "Juan de Dios Bátiz". En la carrera de Programación (Concluido).<br/>
@@ -104,20 +105,20 @@
             <p class="ins-poppover">
                 Para obtener información de cada uno, presiona el botón. Para desactivar la ventana emergente, vuelve a presionar el botón
             </p>
-            <ul class="row justify-content-around">
+            <ul class="botones-poppovers row text-center">
                 <div class="col-12 col-md-5">
-                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="HTML, siglas en inglés de HyperText Markup Language (‘lenguaje de marcado de hipertexto’), hace referencia al lenguaje de marcado para la elaboración de páginas web.">HTML5</a></li>
-                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="CSS (siglas en inglés de Cascading Style Sheets), en español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.">CSS3</a></li>
-                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus"data-placement="right" data-content="JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico.">Javascript</a></li>
-                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="Java es un lenguaje de programación y una plataforma informática que fue comercializada por primera vez en 1995 por Sun Microsystems. Java ies usada para desarrollar aplicaciones moviles, aplicaciones web, aplicaciones de escritorio, juegos y mucho más.">Java</a></li>
-                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="MySQL es un sistema de gestión de bases de datos relacional desarrollado Oracle Corporation y está considerada como la base de datos de código abierto más popular del mundo.">MySQL</a></li>
+                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="HTML, siglas en inglés de HyperText Markup Language (‘lenguaje de marcado de hipertexto’), hace referencia al lenguaje de marcado para la elaboración de páginas web.">HTML5</a></li>
+                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="CSS (siglas en inglés de Cascading Style Sheets), en español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.">CSS3</a></li>
+                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus"data-placement="bottom" data-content="JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico.">Javascript</a></li>
+                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="Java es un lenguaje de programación y una plataforma informática que fue comercializada por primera vez en 1995 por Sun Microsystems. Java es usada para desarrollar aplicaciones moviles, aplicaciones web, aplicaciones de escritorio, juegos y mucho más.">Java</a></li>
+                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="MySQL es un sistema de gestión de bases de datos relacional desarrollado Oracle Corporation y está considerada como la base de datos de código abierto más popular del mundo.">MySQL</a></li>
                 </div>
                 <div class="col-12 col-md-5">
-                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="LaTeX es un sistema de composición de textos, orientado a la creación de documentos escritos que presenten una alta calidad tipográfica. Por sus características y posibilidades, es usado de forma especialmente intensa en la generación de artículos y libros científicos.">LaTeX</a></li>
-                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="Figma es un editor de gráficos vectorial y una herramienta de generación de prototipos, principalmente basada en la web, con características off-line adicionales habilitadas por aplicaciones de escritorio en macOS y Windows">Figma</a></li>
-                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="Bootstrap es un framework o una biblioteca multiplataforma o conjunto de herramientas de código abierto para diseño de sitios y aplicaciones web.">Bootstrap</a></li>
-                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="Git es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia, la confiabilidad y compatibilidad del mantenimiento de versiones de aplicaciones cuando estas tienen un gran número de archivos de código fuente.">Git</a></li>
-                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="Trello es un software de administración de proyectos con interfaz web y con cliente para iOS y android para organizar proyectos.">Trello</a></li>
+                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="LaTeX es un sistema de composición de textos, orientado a la creación de documentos escritos que presenten una alta calidad tipográfica. Por sus características y posibilidades, es usado de forma especialmente intensa en la generación de artículos y libros científicos.">LaTeX</a></li>
+                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="Figma es un editor de gráficos vectorial y una herramienta de generación de prototipos, principalmente basada en la web, con características off-line adicionales habilitadas por aplicaciones de escritorio en macOS y Windows">Figma</a></li>
+                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="Bootstrap es un framework o una biblioteca multiplataforma o conjunto de herramientas de código abierto para diseño de sitios y aplicaciones web.">Bootstrap</a></li>
+                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="Git es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia, la confiabilidad y compatibilidad del mantenimiento de versiones de aplicaciones cuando estas tienen un gran número de archivos de código fuente.">Git</a></li>
+                    <li><a tabindex="0" class="btn-pop icon-right-open btn btn-outline-primary" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="Trello es un software de administración de proyectos con interfaz web y con cliente para iOS y android para organizar proyectos.">Trello</a></li>
                 </div>
             </ul>
         </article>
@@ -129,19 +130,19 @@
         <article class="contenedor">
             <h3 class="titulo d-flex justify-content-center align-content-start"><label class="icon-folder-open-empty"></label> Proyectos</h3>
             <ul class="cont_lista row dropdown d-flex justify-content-start align-content-around">
-                <li><label class="icon-heart dropdown-toggle item-HA" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Heart Attack </label><br/>
+                <li><label class="prin item-HA icon-heart dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Heart Attack </label><br/>
                     <ul class="interior_lista dropdown-menu">
                         <li class="icon-file-pdf dropdown-item"><a href="cargadorpdf.html">Ver información</a></li>
                         <li class="dropdown-divider"></li>
                         <li class="icon-download-1 dropdown-item"><a download="Heart_Attack_Document.pdf" href="Heart_Attack_Document.pdf">Descargar información</a></li>
                     </ul>
                 </li><div class="w-100"></div>
-                <li><label class="icon-briefcase lista_des dropdown-toggle item-OP" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Otros proyectos</label><br/>
+                <li><label class="icon-briefcase prin lista_des dropdown-toggle item-OP" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Otros proyectos</label><br/>
                     <ul class="interior_lista dropdown-menu">
-                        <li class="icon-sun dropdown-item"> Tarea del Bootcamp: <a href="https://denissegonz.github.io/Ejercicio-Rod/">Página Rod</a></li>
+                        <li class="icon-sun dropdown-item"> Tarea del Bootcamp:<a href="https://denissegonz.github.io/Ejercicio-Rod/"> Página Rod</a></li>
                     </ul>
                 </li><div class="w-100"></div>
-                <li class="icon-github-circled item-git"> Link a <a href="https://github.com/DenisseGonz">Github</a></li>
+                <li class="icon-github-circled prin item-git"> Link a <a class="prin" href="https://github.com/DenisseGonz">Github</a></li>
             </ul>
         </article>
     </div>
@@ -160,7 +161,7 @@
                     <label class="textoform">Mensaje</label><br/>
                     <textarea class="textoform  form-control mensaje"></textarea>
                     <div class="w-100"></div>
-                    <button id="enviar">Enviar</button>
+                    <button type="button" class="enviar btn btn-outline-light">Enviar</button>
                 </form>
             </section>
         </article><div class="w-100"></div>

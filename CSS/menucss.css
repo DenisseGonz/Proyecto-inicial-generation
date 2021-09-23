@@ -71,6 +71,7 @@
     position:relative;
     transform: translateX(-100%);
 }
+/*Hace que el menú este hasta arriba*/
 #btn-menu:checked ~ .contenedorPrin .contLista{
     transform: translateX(0%);
 }
