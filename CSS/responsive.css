@@ -14,6 +14,9 @@
         width: 120px;
         font-size: 1em;
     }
+    label{
+        font-size: 1.15em;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -30,13 +33,13 @@
     .prin{
         font-size: 1.25rem;
     }
+    label{
+        font-size: 1.25em;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-    .icon-menu{
-        font-size: 210px;
-    }
     #menu{
         font-size: 1.5em;
         padding-left: 15%;
@@ -60,6 +63,9 @@
     }
     p{
         font-size: 1.125rem;
+    }
+    label{
+        font-size: 1.35em;
     }
 }
 
@@ -105,9 +111,6 @@
         font-size: 2em;
         margin-top: 15px;
     }
-    .icon-user-circle-o{
-        font-size: 1em;
-    }
     .info-sobre-mi{
         font-size: 1.75em;
     }
@@ -135,7 +138,7 @@
     }
     /*Contacto*/
     label{
-        font-size: 5em;
+        font-size: 1.45em;
     }
     .mensaje{
         height: 30px;
