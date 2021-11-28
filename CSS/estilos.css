@@ -1,8 +1,35 @@
+:root{
+    /*Paleta de colores*/
+    --naranja-fuerte: #ee8b00;
+    --naranja-mediano:#ff9900;
+    --naranja-amarillo:#ffb12c;
+    --azul-fuerte:#005df4;
+    --azul-clarito:#467cff;
+    --blanco-transparente: rgba(255, 255, 255, 0.6);
+    /*Tipografia*/
+    --titulo: 'Pacifico', cursive;
+    --subtitulo:'Josefin Sans', sans-serif;
+    --texto:'Dosis', sans-serif;
+}
+.music{
+    background-color: var(--blanco-transparente);
+    /* backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px); */
+}
+.reproductor{
+    position:fixed;
+    z-index: 9999;
+    bottom: 15px;
+    right: 15px;
+}
+.vol-range{
+    display:none;
+}
 *{
     margin: 0%;
     padding: 0%;
     box-sizing:unset;
-    font-family: 'Titillium Web', sans-serif; 
+    font-family: var(--texto);
 }
 body::-webkit-scrollbar {
     display: none;
@@ -13,18 +40,18 @@ body::-webkit-scrollbar {
 html{
     scroll-snap-type: y mandatory;
 }
+#particles-js{
+    height: 100vh;
+    width: 100%;
+    position:fixed;
+    background: linear-gradient(180deg, #ee8b0086 33.85%, #ffb22c80 100%);
+    z-index:-1;
+}
 .yo, .sobre_mi, .habilidades, .portafolio, .contacto{
         scroll-snap-align: center;
         scroll-snap-stop: always;
 }
 /* Principal */
-.yo{
-    position: static;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(180deg, #010934 45.83%, #00C2FF 100%);
-    margin: 0;
-}
 .carousel{
     position: static;
 }
@@ -49,23 +76,32 @@ html{
     z-index: 0;
 }
 .nombre{
-    font-size: 1.5rem;
-    color: blanchedalmond;
-    font-style: italic;
-    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    color: #005df4;
+    font-family: var(--titulo);
     margin-top: 10%;
+    background-color: var(--blanco-transparente);
+    padding: 2%;
+    width: 100%;
+    border-radius: 25px;
 }
 .puesto{
     font-size: 1.25rem;
-    color: blanchedalmond;
-    font-family: 'Oswald', sans-serif;
+    color: #467cff;
+    font-family: var(--subtitulo);
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    border-radius: 25px;
 }
 .entrada{
-    background-color: white;
+    background-color: var(--blanco-transparente);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     text-align: center;
-    margin-bottom: 10%;
-    margin-top: 7%;
-    width: 82%;
+    width: 82vw;
     height: 12vh;
 }
 .mi-foto{
@@ -76,16 +112,13 @@ html{
 }
 
 /*Sobre mi*/
-.sobre_mi{
-    position: static;
-    width: 100%;
-    background: linear-gradient(180deg, #00C2FF 0%, #4561C6 85.42%);
-    margin: 0;
-}
+
 .contenedor{
     margin-top: 5%;
     margin-bottom: 5%;
-    background-color: white;
+    background-color: var(--blanco-transparente);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     width: 82%;
 }
 .titulo{
@@ -105,12 +138,7 @@ html{
 }
 
 /* Habilidades */
-.habilidades{
-    position: static;
-    width: 100%;
-    background: linear-gradient(180deg, #4561C6 33.85%, #321CB7 100%);
-    margin: 0;
-}
+
 .ins-poppover{
     width: 80%;
 }
@@ -128,13 +156,7 @@ li{
 }
 
 /* Proyectos */
-.portafolio{
-    position: static;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    background: linear-gradient(180deg, #321CB7 50.2%, #321CB7 50.21%, #4B0A7D 100%);
-}
+
 .cont_lista{
     width: 70%;
     font-size: 1.25rem;
@@ -173,14 +195,9 @@ li{
 }
 
 /* Contacto */
-.contacto{
-    position: static;
-    width: 100%;
-    margin: 0;
-    background: linear-gradient(180deg, #480D80 0%, #000000 100%);
-}
+
 .contenedor-form{
-    background: linear-gradient(180deg, #480D80 0%, rgba(72, 13, 128, 0.56) 100%);
+    background: linear-gradient(180deg, #ee8b0086 33.85%, #ffb22c80 100%);
     color: white;
     padding: 5%;
     margin: 5% 15%;
@@ -192,6 +209,7 @@ li{
     padding-top: 3%;
 }
 input, textarea{
+    background-color: var(--azul-clarito);
     outline:none;
 }
 .textoform{
